@@ -1,0 +1,102 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    text-align: center;
+    /*alinha todos os elementos ao centro*/
+    margin: 0;
+    /*padrão navegador põe 8px de margin*/
+}
+#main{
+    width: 626px;
+    height: 486px;
+    
+    margin: 32px auto 64px;
+    /*margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;*/
+    
+}
+#image {
+    width: 350px;
+    height: 238px;
+    margin: 0 auto 32px;
+    /*
+        cima, direita, esquerda e baixo
+        
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 32px;
+        margin-left: auto;
+    */
+    /*auto - preenche todos os espaços de maneira igualmente*/
+}
+
+#image img {
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 56px;
+    font-weight: normal;
+    /*negrito*/
+
+    margin-bottom: 16px;
+}
+
+h1 span {
+    /* span dentro do h1*/
+    color: #EE24FF;
+    font-weight: bold;
+}
+
+span, a {
+    /* span e a*/
+    color: #FF9900;
+}
+
+p, #links {
+    color: #7D7987;
+
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/*Pega a que é anterior a ele*/
+#links a + a {
+    margin-left: 42px;
+}
+
+a {
+    color: black;
+    margin-bottom: 40px;
+}
+
+#footer {
+    /*
+        Position é uma camada sobre a outra
+    */
+    position: fixed;
+    background-size: cover;
+
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#line {
+    width: 391px;
+    height: 0px;
+    margin: 0 auto 0px;
+
+    border: 1px solid #ECEFF2
+}
+
+#footer #wave {
+    background-size: cover;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
