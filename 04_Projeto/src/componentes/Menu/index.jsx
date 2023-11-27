@@ -1,25 +1,23 @@
 import { Links, ListItem} from "./styles.js"
 
-// import { Link, useNavigate} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export function Menu(){
-
-    // const navigate = useNavigate()
-
-    // function handleDestiny(){
-    //     navigate(`/details/`)
-    // }
-
-    // function handleHome(){
-    //     navigate(`/`)
-    // }
 
     return(
         <Links>
 
-            {/* <ListItem target="_black" href="#" onClick={() => handleDestiny()}>
+            <Link to="/">
+                Home
+            </Link>
+
+            <Link to="/destino">
+                Destinos com Rota
+            </Link>
+
+            <ListItem to="/destino">
                 Destinos
-            </ListItem> */}
+            </ListItem>
 
             <ListItem target="_black" href="#">
                 Ofertas
@@ -29,11 +27,6 @@ export function Menu(){
                 Contato
             </ListItem>
 
-            {/* <ListItem href="mailto:brunobandeirafernandes@gmail.com">
-                <Link to="/register">
-                    Criar conta
-                </Link>
-            </ListItem> */}
 
             
 

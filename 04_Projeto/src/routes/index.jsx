@@ -1,13 +1,11 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 
-import { Home} from '../pages/Home';
-import { Destiny } from '../pages/Destiny';
+import { AppRoutes } from "./app.routes";
 
-export function AuthRoutes(){
+export function Routes(){
     return(
-        <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/destiny' element={<Destiny/>} />
-        </Routes>
+        <BrowserRouter>
+            <AppRoutes />
+        </BrowserRouter>
     );
 }
