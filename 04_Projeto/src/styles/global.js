@@ -8,8 +8,15 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    //background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    //color: ${({ theme }) => theme.COLORS.WHITE};
+
+    font-family: 'Open Sans', sans-serif;
+
+    text-align: center;
+    /*alinha todos os elementos ao centro*/
+    margin: 0;
+    /*padrão navegador põe 8px de margin*/
 
   }
 

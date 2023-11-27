@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Link = styled.div`
+export const Links = styled.div`
     a + a {
         margin-left: 42px;
     }

@@ -1,5 +1,6 @@
 import { Container, Image, Title, Emphasis, Paragraph } from "./styles"
 
+
 import img1 from '../../imgs/img1.jpg'
 
 export function Main(){
