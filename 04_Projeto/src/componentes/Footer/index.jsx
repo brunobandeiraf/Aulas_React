@@ -1,4 +1,4 @@
-import "./styles.css"
+import { Rodape, Line, ImgWave } from "./styles"
 
 import wave from '../../imgs/wave.png'
 
@@ -6,13 +6,12 @@ import { Menu } from '../Menu'
 
 export function Footer(){
     return(
-        <div id="footer">
-            <div id="line"></div>
-            
-            {/* Menu */}
+        <Rodape>
+            <Line/>
+        
             <Menu/>
 
-            <img id="wave" src={wave} alt="imagem de fundo do footer" />
-        </div>
+            <ImgWave src={wave} alt="imagem de fundo do footer" />
+        </Rodape>
     )
 }

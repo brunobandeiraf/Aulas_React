@@ -1,16 +1,16 @@
-import "./styles.css"
+import { Container, Image, Title, Emphasis, Paragraph } from "./styles"
 
 import img1 from '../../imgs/img1.jpg'
 
 export function Main(){
     return(
-        <div id="main">
-            <div id="image">
+        <Container>
+            <Image>
                 <img src={img1} alt="Desenho de uma pessoa com uma camisa amarela com móveis" />
-            </div>
+            </Image>
             
-            <h1>O seu próximo <span>destino</span> pode estar aqui...</h1>
-            <p>
+            <Title>O seu próximo <Emphasis>destino</Emphasis> pode estar aqui...</Title>
+            <Paragraph>
                 Aqui você encontra uma seleção de <strong>pacotes completos</strong>
                 para as suas férias!
                 <br />
@@ -21,7 +21,7 @@ export function Main(){
                 <br />
                 <br />
                 Se você ainda não tem um destino definido, confira nossa seção de ofertas.
-            </p>
-        </div>
+            </Paragraph>
+        </Container>
     )
 }

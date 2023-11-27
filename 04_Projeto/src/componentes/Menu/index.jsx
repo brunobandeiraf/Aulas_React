@@ -1,21 +1,21 @@
-import "./styles.css"
+import { Link, ListItem} from "./styles.js"
 
-export function Footer(){
+export function Menu(){
     return(
-        <div id="links">
+        <Link>
 
-            <a target="_black" href="#">
+            <ListItem target="_black" href="#">
                 Destinos
-            </a>
+            </ListItem>
 
-            <a target="_black" href="#">
+            <ListItem target="_black" href="#">
                 Ofertas
-            </a>
+            </ListItem>
 
-            <a href="mailto:brunobandeirafernandes@gmail.com">
+            <ListItem href="mailto:brunobandeirafernandes@gmail.com">
                 Contato
-            </a>
+            </ListItem>
 
-        </div>
+        </Link>
     )
 }
