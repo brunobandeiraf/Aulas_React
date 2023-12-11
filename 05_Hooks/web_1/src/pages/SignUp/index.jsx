@@ -11,6 +11,23 @@ export function SignUp() {
 
   const navigate = useNavigate();
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function handleSignUp() {
+    if (!name || !email || !password) {
+      return alert("Preencha todos os campos!");
+    }
+
+    console.log("Nome: " + name 
+      + "\nE-mail: " + email 
+      + "\nPassword: " + password)
+
+    alert("Usuário cadastrado com sucesso!")
+    //navigate("/");
+  }
+
   return (
     <Container>
       <Form>
@@ -20,22 +37,26 @@ export function SignUp() {
           placeholder="Nome"
           type="text"
           icon={FiUser}
+          onChange={e => setName(e.target.value)}
         />
 
         <Input
           placeholder="E-mail"
           type="text"
           icon={FiMail}
+          onChange={e => setEmail(e.target.value)}
         />
 
         <Input
           placeholder="Senha"
           type="password"
           icon={FiLock}
+          onChange={e => setPassword(e.target.value)}
         />
 
         <Button
           title="Cadastrar"
+          onClick={handleSignUp}
         />
 
         <Link to="/">
