@@ -10,7 +10,7 @@ export function Home() {
       <Header />
 
       <main>
-        <Feature title="Produto" icon={FiTag} to="/product" />
+        <Feature title="Usuários" icon={FiTag} to="/users" />
         <Feature title="Cadastrar Usuário" icon={FiUserPlus} to="/register" />
       </main>
     </Container>

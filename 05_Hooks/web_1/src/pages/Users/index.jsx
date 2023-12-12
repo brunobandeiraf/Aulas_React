@@ -3,17 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { Container, Header, Item } from "./styles";
 import { Button } from '../../components/Button';
 
-export function Product() {
+export function Users() {
   const navigate = useNavigate();
 
   const products = Array(20)
-    .fill({ name: 'Produto' })
+    .fill({ name: 'User' })
     .map((item, index) => (`${item.name} ${index + 1}`));
 
   return (
     <Container>
       <Header>
-        <h1>Produtos</h1>
+        <h1>Usuários</h1>
 
         <nav>
           <Button title="Voltar" onClick={() => navigate('/')} />
@@ -21,9 +21,9 @@ export function Product() {
       </Header>
 
       {
-        products.map((product) => (
-          <Item key={product}>
-            <span>{product}</span>
+        products.map((user) => (
+          <Item key={user}>
+            <span>{user}</span>
           </Item>
         ))
       }
