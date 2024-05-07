@@ -7,9 +7,7 @@ export function Home(){
     
     return(
         <>
-            {/* Main */}
             <Main/>
-            {/* Footer */}
             <Footer/>
         </>
     )

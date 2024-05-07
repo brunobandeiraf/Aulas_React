@@ -1,6 +1,6 @@
 import "./styles.css"
 
-export function Footer(){
+export function Menu(){
     return(
         <div id="links">
 
