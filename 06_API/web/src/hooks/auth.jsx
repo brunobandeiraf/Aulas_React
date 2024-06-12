@@ -7,8 +7,6 @@ import {
 
 const AuthContext = createContext({});
 
-import { api } from "../services/api";
-
 function AuthProvider({ children }) {
   const [data, setData] = useState({});
 

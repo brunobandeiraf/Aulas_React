@@ -1,8 +1,5 @@
-import { useState } from "react";
 import { FiMail, FiUser, FiLock, FiArrowLeft } from 'react-icons/fi';
 import { Link, useNavigate } from "react-router-dom";
-
-import { api } from "../../services/api";
 
 import { Container, Form } from "./styles";
 import { Input } from "../../components/Input";
