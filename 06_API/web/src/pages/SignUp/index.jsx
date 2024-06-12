@@ -35,7 +35,6 @@ export function SignUp() {
 
         <Button
           title="Cadastrar"
-          onClick={handleSignUp}
         />
 
         <Link to="/">
