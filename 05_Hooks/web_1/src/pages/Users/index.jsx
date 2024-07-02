@@ -6,7 +6,7 @@ import { Button } from '../../components/Button';
 export function Users() {
   const navigate = useNavigate();
 
-  const products = Array(20)
+  const products = Array(15)
     .fill({ name: 'User' })
     .map((item, index) => (`${item.name} ${index + 1}`));
 

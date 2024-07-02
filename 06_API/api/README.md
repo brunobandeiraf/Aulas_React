@@ -14,3 +14,8 @@ Gerar o banco de dados
 ### Rodar a última migrate
 - npx knex migrate:latest
 
+
+
+npm i 
+npm run migrate
+npm run dev

@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 import { Container, Form } from "./styles";
+
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
@@ -34,7 +35,7 @@ export function SignUp() {
         <h1>Crie a sua conta</h1>
 
         <Input
-          placeholder="Nome"
+          placeholder= "Nome"
           type="text"
           icon={FiUser}
           onChange={e => setName(e.target.value)}
@@ -48,7 +49,7 @@ export function SignUp() {
         />
 
         <Input
-          placeholder="Senha"
+          placeholder= "Senha"
           type="password"
           icon={FiLock}
           onChange={e => setPassword(e.target.value)}

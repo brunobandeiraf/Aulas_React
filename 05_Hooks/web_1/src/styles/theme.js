@@ -9,5 +9,6 @@ export default {
   
       BRAND_600: "#633BBC",
       BRAND_500: "#8257E5",
+
     }
   };
